@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cole Vanagas | Aerospace Engineering Portfolio</title>
+<defs></defs>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<style>
+:root{--bg:#eef2f6;--ink:#14233a;--mute:#4d5d73;--line:#c5d0dc;--card:#f8fafc;--acc:#489fd1;--accfg:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:url('https://images.pexels.com/photos/7952546/pexels-photo-7952546.jpeg');--ink:#e7edf5;--mute:#98a8bd;--line:#2a3a52;--card:#152236;--acc:#4d91d5;--accfg:#0f1826}}
+:root[data-theme="dark"]{--bg:#0f1826;--ink:#e7edf5;--mute:#98a8bd;--line:#2a3a52;--card:#152236;--acc:#4cc6ff;--accfg:#0f1826}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg) center / cover no-repeat fixed;color:var(--ink);font:18px/1.6 Newsreader,Georgia,serif}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+.wrap{max-width:1500px;margin:0 auto;padding:0 24px}
+h1,h2,h3,.sans{font-family:Archivo,"Helvetica Neue",Arial,sans-serif}
+header.top{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+header.top .wrap{display:flex;justify-content:space-between;align-items:center;height:56px}
+nav{display:flex;gap:20px;font:600 14px Archivo,sans-serif;overflow-x:auto}
+nav a{text-decoration:none;color:var(--mute);white-space:nowrap}
+nav a:hover{color:var(--acc)}
+.hero{position:relative;padding:72px 0 64px;overflow:hidden}
+.orbit{position:absolute;right:-120px;top:10px;width:840px;max-width:100%;opacity:.9;pointer-events:none}
+.orbit ellipse,.orbit circle.body{fill:none;stroke:var(--line);stroke-width:1.5}
+.orbit .sat{outline-width: 0}
+.orbit .satV{outline-width: 0}
+.orbit .satMe{outline-width: 0}
+.orbit .satMa{outline-width: 0}
+.hero h1{position:relative;font-weight:800;font-size:clamp(48px,11vw,116px);line-height:.92;letter-spacing:-.03em;margin:0 0 24px}
+.hero p{position:relative;max-width:34em;font-size:21px;margin:0 0 28px}
+.btns{position:relative;display:flex;flex-wrap:wrap;gap:12px}
+.btn{font:600 15px Archivo,sans-serif;padding:12px 20px;border:2px solid var(--ink);text-decoration:none;border-radius:4px}
+.btn.p{background:var(--acc);border-color:var(--acc);color:var(--accfg)}
+.btn:hover{transform:translateY(-1px); transform-style:btn}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font-weight:800;font-size:32px;letter-spacing:-.01em;margin:0 0 28px}
+h3{font-size:20px;font-weight:600;margin:0}
+.meta{color:var(--mute);font:14px Archivo,sans-serif;margin:2px 0 12px}
+ul{padding-left:20px;margin:0}
+li{margin-bottom:8px;max-width:150ch}
+.job{display:grid;grid-template-columns:200px 1fr;gap:32px}
+.job .when{font:600 14px Archivo,sans-serif;color:var(--mute)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.proj{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--acc);border-radius:4px;padding:22px}
+.proj.big{grid-column:1/-1}
+.proj p{margin:8px 0 0}
+.tag{display:inline-block;font:600 13px Archivo,sans-serif;color:var(--acc);margin-top:12px}
+dl{margin:0;display:grid;grid-template-columns:200px 1fr;gap:14px 32px}
+dt{font:600 15px Archivo,sans-serif}
+dd{margin:0}
+.stat{display:flex;flex-wrap:wrap;gap:200px}
+.stat div{font:14px Archivo,sans-serif;color:var(--mute)}
+.stat b{display:block;font:800 40px Archivo,sans-serif;color:var(--ink);line-height:1.1}
+footer{padding:48px 0 64px;border-top:1px solid var(--line)}
+footer h2{margin-bottom:12px}
+@media (max-width:820px){.job,dl{grid-template-columns:1fr;gap:6px}.orbit{opacity:.5;right:-260px}dl{gap:4px}dd{margin-bottom:12px}}
+@media (prefers-reduced-motion:no-preference){.sat{offset-path:path("M60 210a260 90 0 1 0 520 0a260 90 0 1 0 -520 0");animation:go 14.6s linear infinite}@keyframes go{from{offset-distance:0}to{offset-distance:100%}}}
+@media (prefers-reduced-motion:no-preference){.satV{offset-path:path("M140 210a180 60 0 1 0 360 0a180 60 0 1 0 -360 0");animation:go 9s linear infinite}@keyframes go{from{offset-distance:0}to{offset-distance:100%}}}
+@media (prefers-reduced-motion:no-preference){.satMe{offset-path:path("M220 210a100 35 0 1 0 200 0a100 35 0 1 0 -200 0");animation:go 3.52s linear infinite}@keyframes go{from{offset-distance:0}to{offset-distance:100%}}}
+@media (prefers-reduced-motion:no-preference){.satMa{offset-path:path("M-70 210a390 135 0 1 0 780 0a390 135 0 1 0 -780 0");animation:go 27.48s linear infinite}@keyframes go{from{offset-distance:0}to{offset-distance:100%}}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+<strong class="sans" style="color: #98a8bd;" >Engineering Portfolio: <span style="padding-left: 20px;"></span> ~Cole Vanagas~</strong>
+<nav aria-label="Sections"><a href="#top">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#involvement">Involvement</a><a href="#contact">Contact</a></nav>
+</div></header>
+
+<main>
+<div class="hero"><div class="wrap">
+<svg class="orbit" viewBox="-100 -100 840 520" aria-hidden="true"> 
+    <defs><radialGradient id="SunGradient" cx="50%" cy="50%" r="50%" fx="30%" fy="30%"><stop offset="0%" stop-color="yellow" /><stop offset="100%" stop-color="orange" /></radialGradient> 
+      <filter id="SunGlow" x="-200%" y="-200%" width="500%" height="500%">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="9" result="blur" />
+        <feColorMatrix in="blur" type="matrix"
+          values="0 0 0 0 1
+                  0 0 0 0 0.85
+                  0 0 0 0 0.2
+                  0 0 0 0.7 0" result="yellow" />
+        <feMerge>
+          <feMergeNode in="yellow" />
+          <feMergeNode in="SourceGraphic" />
+        </feMerge>
+      </filter>
+      <pattern id="EarthPattern" width="1" height="1" patternContentUnits="objectBoundingBox"><image href="https://images.pexels.com/photos/30596235/pexels-photo-30596235.jpeg" width="1.3" height="1.3" x="-0.15" y="-0.15" preserveAspectRatio="xMidYMid slice" /></pattern>
+      <pattern id="MercuryPattern" width="1" height="1" patternContentUnits="objectBoundingBox"><image href="https://images-assets.nasa.gov/image/PIA15161/PIA15161~medium.jpg" width="1.3" height="1.3" x="-0.15" y="-0.15" preserveAspectRatio="xMidYMid slice" /></pattern>
+      <pattern id="MarsPattern" width="1" height="1" patternContentUnits="objectBoundingBox"><image href="https://images-assets.nasa.gov/image/PIA02000/PIA02000~small.jpg" width="1.3" height="1.3" x="-0.15" y="-0.15" preserveAspectRatio="xMidYMid slice" /></pattern>
+      <pattern id="VenusPattern" width="1" height="1" patternContentUnits="objectBoundingBox"><image href="https://images.pexels.com/photos/20376407/pexels-photo-20376407.jpeg" width="1.3" height="1.3" x="-0.15" y="-0.15" preserveAspectRatio="xMidYMid slice" /></pattern></defs>
+    <ellipse cx="320" cy="210" rx="390" ry="135" transform="rotate(-18 320 210)"/><ellipse cx="320" cy="210" rx="260" ry="90" transform="rotate(-18 320 210)"/><ellipse cx="320" cy="210" rx="100" ry="35" transform="rotate(-18 320 210)"/><ellipse cx="320" cy="210" rx="180" ry="60" transform="rotate(-18 320 210)"/>
+    <circle fill="url(#SunGradient)" filter="url(#SunGlow)" cx="320" cy="210" r="26"/>
+    <g transform="rotate(-18 320 210)">
+    <circle class="sat"  r="9" fill="url(#EarthPattern)" style="offset-path:path('M60 210a260 90 0 1 0 520 0a260 90 0 1 0 -520 0')" cx="0" cy="0"/>
+    <circle class="satMe"  r="5" fill="url(#MercuryPattern)" style="offset-path:path('M220 210a100 35 0 1 0 200 0a100 35 0 1 0 -200 0')" cx="0" cy="0"/>
+    <circle class="satMa" r="8.5" fill="url(#MarsPattern)" style="offset-path:path('M-70 210a390 135 0 1 0 780 0a390 135 0 1 0 -780 0')" cx="0" cy="0"/>
+    <circle class="satV" r="7" fill="url(#VenusPattern)" style="offset-path:path('M140 210a180 60 0 1 0 360 0a180 60 0 1 0 -360 0')" cx="0" cy="0"/></g></svg>
+<h1 style="font-size:90px">Cole Vanagas</h1>
+<br><br>
+<h2>My Foundation:</h2>
+<p style = "text-indent: 60px">Hello there. I am a junior at Embry-Riddle Aeronautical University, Daytona Beach. I am studing to attain my Bachelor's Degree in Aerospace engineering with a focus in astronautics and propulsion. At Embry-Riddle, I am also a member of the honors program, which challenges my degree acquisition further. Growing up on a ranch, I had participated in activities very different to engineering in my youth, such as 4-H and youth baseball. However, I have years of experience in engineering and unshaken love for problem solving. I truely think that problem solving is any aspiring engineer's bread and butter and dreams of a better world to be the drive. My 8th grade science fair project on friction and magnetic breaking is likely the earliest example of this love coming to fruition.</p>
+<p style = "text-indent: 60px">In high school I had taken fundamental engineering for 3 years learning Autodesk Inventor and became a teaching assistant for the class my senior year. In that same year, for the second year in a row, my robotics team had made it to the finals in the First Tech Challenge (FTC) state competition. However this time, we had won the finals and achieved the opportunity to compete at the Worlds competition. We had advanced further placing high in our division at the world competition and first in the world for the autonomous portion of the competition. Even now in college, I continue to grow my skills in different mediums such as MATLAB, CATIA, STK, HTML, etc.</p>
+<br> 
+</div></div>
+<div class="wrap">
+<section>
+  <h2>About Cole:</h2>
+  <p style = "text-indent: 60px">While I am normally not one to tell others about my achievements and boast my skills, I figure this portfolio is a necessary exception. I am starting my discussion with what drives me, as I feel that is one of the most important things in getting to know a person. Innovation and technology in general have always been major interests of mine, and even if I had no other aspirations in life, I would likely still want to be an engineer of some sort. I love old stories of fantastical and ambitious adventures filled with even more unique and intriguing people. So, it's no surprise that stories, such as those of Jules Verne, have inspired me to walk down a path of innovation and to expand the limits of humanity.
+  </p>
+  <p style = "text-indent: 60px">In a similar branch, aviation and space have always called to me. My uncle being a pilot and teaching me the very basics of aviation as a young child, surely influenced this. Perhaps, it is the pursuit of the unknown and the impossible that these branches of engineering offer that led me to become an aerospace engineer. However, I would like to believe that it is, as with most ambitions, a combination of both my umbringing and my knowledge learned from the world. Because of this, I have two main focuses I hope to pursure in my aerospace engineering career; Space exploration and Airships. 
+  </p>
+  <p style = "text-indent: 60px">Since learning and research is my favorite pastime, I am always trying to learn as much as I can about these fields and creating feasible ideas of my own. Later down the line I hope to have attained enough experience in the field through my hardwork in an aerospace company of some sort and gain the opportunitiy to start my own company focusing on autonomous space mining and space manufacturing as a whole. Perhaps, one day I may even be blessed with the opportunitiy to start multiple companies based on my ideas on what could help the world and expand humanity's capabilities. However, before I get the chance to partake in those dreams of mine, I plan on working hard in a company that shares my passion for improving humanity and pushing the limits in aerospace.</p>
+  <br>
+  <div class="btns"><a class="btn p" href="#experience">See my work</a><a class="btn" href="mailto:Vanagasc@my.erau.edu">Email me</a><a class="btn" href="https://www.linkedin.com/in/cole-vanagas" rel="noopener">LinkedIn</a></div>
+</section>
+</div>
+<section><div class="wrap stat">
+<div><b>3.5</b>GPA, B.S. Aerospace Engineering</div> 
+<div><b>1st</b>in Florida, FTC Robotics 2024</div>
+<div><b>13th of 56</b>in the FTC Worlds Golden Fish subdivision</div>
+<div><b>3x</b>Dean's List (2024, 2025, 2026)</div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+<h2>Work Experience:</h2>
+<div class="job">
+<div class="when">May - Aug 2025<br>Dec 2025<br>Cape Coral, FL</div>
+<div>
+<h3>Entry-Level Mechanical Engineer, GM Automation</h3>
+<p class="meta">Custom filling, capping and packaging machinery</p>
+<ul>
+<li>I had designed and built filling and capping machines for liquid soap and natural-flavoring bottling lines. With a cross-functional team we used Autodesk Inventor and Vault to work together on different concepts for assembly and component manufacturing.</li>
+<li>Given these reviewed requirements, I had then helped machined various plates, rods, keys, guard rails, mounting brackets, ect. I had manufactured these objects to specification and within tolerance using hand drills, a drill press, saws, lathes, and sanders. I even learned how to tap holes and sharpen drill bits.</li>
+<li>Additonally I had helped test various nozzle sizes and pressure settings across several liquid viscosities to reach target fill rates. These nozzles would vary in size, screens, and plunger tips. The size would mainly effect the volumetric flow rate of the opening with the ambient pressure applied into the liquid holding tank above. The mesh screens were often added to minimize spillage and to produce a laminar flow by directing the streams all in the same direction. Finally using the collected data, we then turned the data into final nozzle and pressure specifications.</li>
+<li>Furthermore, during my time at GM Automation, I helped assemble and wire the labeling and shrink-wrap station of a military grade aircraft paint glass bottling line. I specifically was tasked to wiring up all the conveyor belt 3 phase 240V AC motors, their respective speed controllers (ESCs), and their PIDs. I then also individually packaged and shipped the entire pallet to the customer.</li>
+<li>I also assembled and mounted a complete filling and capping machine for commercial soap manufacturer Native, delivered on schedule and to specification helping mount gears, conveyor chains, paneling and so on.</li>
+<li>Lastly I personally help the company move their entire inventory to a new facility, in the process getting to learn how to drive and use a forklift. I personally tracked and counted every piece of inventory after this transition, allowing for other members to update the numbers in the system. While not enjoyable and extremely tedious, it definitly taught me how much thought goes into managing inventory and how important it is to stay on top of it..</li>
+</ul>
+</div>
+</div>
+<marquee behavior="scroll" direction="left" scrollamount="15" onmouseover="this.stop();" onmouseout="this.start();">
+  
+  <table border="0" cellpadding="10" style="display:inline-table;">
+    <tr><td><img src="Engineering_Portfolio_Photos/GMA_Plunger_Parts.jpg" width="450" height="300" style="object-fit: cover;"></td></tr>
+    <tr><td align="center"><b>Plunger/Nozzle parts</b><br>Parts for filling nozzles with pneumatic solenoid plungers.</td></tr>
+  </table>
+  <table border="0" cellpadding="10" style="display:inline-table;">
+    <tr><td><img src="Engineering_Portfolio_Photos/GMA_Nozzle_Test_Stand.jpg" width="450" height="300" style="object-fit: cover;"></td></tr>
+    <tr><td align="center"><b>Test Stand</b><br>Where I tested various nozzles for given liquids.</td></tr>
+  </table>
+  <table border="0" cellpadding="10" style="display:inline-table;">
+    <tr><td><img src="Engineering_Portfolio_Photos/GMA_CAD_Part.jpg" width="450" height="300" style="object-fit: cover;"></td></tr>
+    <tr><td align="center"><b>CAD Drawing</b><br>My first company part drawing.</td></tr>
+  </table>
+  <table border="0" cellpadding="10" style="display:inline-table;">
+    <tr><td><img src="Engineering_Portfolio_Photos/GMA_CAD_Filler&Capper_Base_V2.jpg" width="450" height="300" style="object-fit: cover;"></td></tr>
+    <tr><td align="center"><b>Filler/Capper Base CAD</b><br>Dual Filler and Capper Base CAD I helped design</td></tr>
+  </table>
+  <table border="0" cellpadding="10" style="display:inline-table;">
+    <tr><td><img src="Engineering_Portfolio_Photos/GMA_CAD_Filler&Capper_Base_Altern.jpg" width="450" height="300" style="object-fit: cover;"></td></tr>
+    <tr><td align="center"><b>Alternative Filler/Capper Base CAD</b><br>The other base CAD design that I helped design</td></tr>
+  </table>
+  <table border="0" cellpadding="10" style="display:inline-table;">
+    <tr><td><img src="Engineering_Portfolio_Photos/1000016742.jpg" width="450" height="300" style="object-fit: cover;"></td></tr>
+    <tr><td align="center"><b>Slew bearing</b><br>The bearing that I greased & mounted under the filler</td></tr>
+  </table>
+  <table border="0" cellpadding="10" style="display:inline-table;">
+    <tr><td><img src="Engineering_Portfolio_Photos/GMA_InProgress_Filler&Capper_Unassembled_Parts.jpg" width="450" height="300" style="object-fit:contain;"></td></tr>
+    <tr><td align="center"><b>Unassembled Parts</b><br>These are some of several parts assembled onto the filler & capper</td></tr>
+  </table>
+  <table border="0" cellpadding="10" style="display:inline-table;">
+    <tr><td><img src="Engineering_Portfolio_Photos/GMA_InProgress_Filler&Capper_Assembly_.jpg" width="450" height="300" style="object-fit: cover;"></td></tr>
+    <tr><td align="center"><b>In-Progress Capper/Filler Assembly</b><br>The full sized capper section assembled.</td></tr>
+  </table>
+    <table border="0" cellpadding="10" style="display:inline-table;">
+    <tr><td><img src="Engineering_Portfolio_Photos/GMA_InProgress_Filler&Capper_Conveyor.jpg" width="450" height="300" style="object-fit: cover;"></td></tr>
+    <tr><td align="center"><b>In-Progress Capper/Filler Assembly</b><br>The conveyor belt section I had assembled</td></tr>
+  </table>
+  <table border="0" cellpadding="10" style="display:inline-table;">
+    <tr><td><img src="Engineering_Portfolio_Photos/GMA_InProgress_Filler&Capper_Gears_.jpg" width="450" height="300" style="object-fit: cover;"></td></tr>
+    <tr><td align="center"><b>Filler/Capper Installed Gear Train</b><br>The gear train I installed under machine.</td></tr>
+  </table>
+  <table border="0" cellpadding="10" style="display:inline-table;">
+    <tr><td><img src="Engineering_Portfolio_Photos/GMA_Complete_Filler&Capper_Front.jpg" width="450" height="300" style="object-fit: cover;"></td></tr>
+    <tr><td align="center"><b>Completed Filler/Capper</b><br>Right at the end of winter break we finished it.</td></tr>
+  </table>
+  <table border="0" cellpadding="10" style="display:inline-table;">
+    <tr><td><img src="Engineering_Portfolio_Photos/GMA_Complete_Filler&Capper.jpg" width="450" height="300" style="object-fit: cover;"></td></tr>
+    <tr><td align="center"><b>Back of Completed Filler/Capper</b><br>The cap hopper was bought, but the rest was made in shop.</td></tr>
+  </table>
+  <table border="0" cellpadding="10" style="display:inline-table;">
+    <tr><td><img src="Engineering_Portfolio_Photos/GMA_CNC_Polypropylene.jpg" width="450" height="300" style="object-fit: cover;"></td></tr>
+    <tr><td align="center"><b>CNC Polypropylene Cutting</b><br>When I used the CNC machine to cut out plastic guide rails</td></tr>
+  </table>
+  <table border="0" cellpadding="10" style="display:inline-table;">
+    <tr><td><img src="Engineering_Portfolio_Photos/GMA_CNC_Teflon.jpg" width="450" height="300" style="object-fit: cover;"></td></tr>
+    <tr><td align="center"><b>CNC Teflon Cutting</b><br>When I used the cnc machine to cut out small seals and spacers.</td></tr>
+  </table>
+  <table border="0" cellpadding="10" style="display:inline-table;">
+    <tr><td><img src="Engineering_Portfolio_Photos/GMA_Full_Filler_Assembly.jpg" width="450" height="300" style="object-fit: cover;"></td></tr>
+    <tr><td align="center"><b>Different Filler Assembly</b><br>Another machine I helped assemble that finished after I left.</td></tr>
+  </table>
+  <table border="0" cellpadding="10" style="display:inline-table;">
+    <tr><td><img src="Engineering_Portfolio_Photos/GMA_Full_Large_Filler_Assembly_.jpg" width="450" height="300" style="object-fit: cover;"></td></tr>
+    <tr><td align="center"><b>A larger Filler Assembly</b><br>A machine that I helped design in CAD.</td></tr>
+  </table>
+  <table border="0" cellpadding="10" style="display:inline-table;">
+    <tr><td><img src="Engineering_Portfolio_Photos/GMA_Conveyor_Assembly.jpg" width="450" height="300" style="object-fit: cover;"></td></tr>
+    <tr><td align="center"><b>Conveyor Bottle Transfer</b><br>Conveyor was to fit different size bottles, so its adjustable</td></tr>
+  </table>
+  <table border="0" cellpadding="10" style="display:inline-table;">
+    <tr><td><img src="Engineering_Portfolio_Photos/GMA_Conveyor_Bottle_Label.jpg" width="450" height="300" style="object-fit: cover;"></td></tr>
+    <tr><td align="center"><b>Bottle Label Applicator</b><br>The portion of the converyor belt I helped assemble.</td></tr>
+  </table>
+  <table border="0" cellpadding="10" style="display:inline-table;">
+    <tr><td><img src="Engineering_Portfolio_Photos/GMA_Conveyor_Electrical.jpg" width="450" height="300" style="object-fit: cover;"></td></tr>
+    <tr><td align="center"><b>Temporary Converyor Belt Electrical</b><br>Wired the 3 Phase AC electric motors to the ECS and power bus.</td></tr>
+  </table>
+  <table border="0" cellpadding="10" style="display:inline-table;">
+    <tr><td><img src="Engineering_Portfolio_Photos/GMA_Conveyor_Electrical_Wiring.jpg" width="450" height="300" style="object-fit: cover;"></td></tr>
+    <tr><td align="center"><b>Temporary Converyor Belt Electrical</b><br>Wired each component together and link it to it's corresponding breaker.</td></tr>
+  </table>
+  <table border="0" cellpadding="10" style="display:inline-table;">
+    <tr><td><img src="Engineering_Portfolio_Photos/GMA_Conveyor_ShrinkWrap_Assembly.jpg" width="450" height="300" style="object-fit: cover;"></td></tr>
+    <tr><td align="center"><b>Converyor Belt Cap Shrinkwrap Seal</b><br>Bought out of house but assemble and fine tuned.</td></tr>
+  </table>
+  <table border="0" cellpadding="10" style="display:inline-table;">
+    <tr><td><img src="Engineering_Portfolio_Photos/GMA_Conveyor_Shipping.jpg" width="450" height="300" style="object-fit: cover;"></td></tr>
+    <tr><td align="center"><b>The Whole Conveyor Ready to Ship</b><br>I individually disassembled the whole conveyor and packed it for shipping.</td></tr>
+  </table>
+
+
+
+</marquee>
+<br>
+<br>
+<div class="job">
+<div class="when">May - Aug 2024<br>Punta Gorda, FL</div>
+<div>
+<h3>Busser/Host, Riviera Bar & Grill</h3>
+<p class="meta">On the water seafood restaurant and bar</p>
+<ul>
+<li>While I didn't have as technical of a job here, it certainly taught me the value of hard work. Working here I had filled various tasks, wherever I was needed at the time. Among my responsibilities as a busser I swept, cleared and wiped tables, mopped, cleaned bathrooms, took out trash, replaced beer kegs, refilled ice at the bars and fountain drink stations, shut down each night, cleaned AC vents, and cleaned up the bar areas. </li>
+<li>Furthermore, since I always needed more hours, I filled in for our hosts and expos as well. I had helped seat customers, deliver food and drinks, took reservations, kept waiters notified of their tables, and even helped write up the specials on the chalk boards.</li>
+<li>Last thing I think is of importance of my time at Riviera, was that I got partial training on how to be a waiter as well as how to be a proper barback. Regardless of its technicality though, this was an invaluable experience.</li>
+</ul>
+</div>
+</div>
+
+</div></section>
+
+<section id="projects"><div class="wrap">
+<h2>Projects:</h2>
+<div class="grid">
+<article class="'proj"><img src="Engineering_Portfolio_Photos/1000018649.jpg" width="350" height="300" style="object-fit: cover;"></article>
+<article class="'proj"><img src="Engineering_Portfolio_Photos/Screenshot 2026-11-18 093024.png" width="350" height="300" style="object-fit: cover;"></article>
+<article class="'proj"><img src="Engineering_Portfolio_Photos/CATIA_Heli_Assembled.jpg" width="350" height="300" style="object-fit: cover;"></article>
+<article class="'proj"><img src="Engineering_Portfolio_Photos/Solid_Mechanics_Coneycomb_Stress_Model.png" width="350" height="300" style="object-fit: cover;"></article>
+
+</div>
+<div class="grid">
+<article class="proj"><h3>FTC Robotics Senior Robot Build, Design Lead</h3><p class="meta">Fall 2023 - 2024</p>
+<p>Directed design decisions for a 2024 FTC competition robot and led the development of the intake subsystem as well as the paper airplane launcher. Our multifuctional robot scored reliably through every method the game rules allowed and made it all the way to the world competition.</p>
+<span class="tag">1st in Florida · 13th in Worlds subdivision (Golden Fish)</span></article>
+<article class="proj"><h3>MATLAB Neutral-Buoyancy Program</h3><p class="meta">Spring 2025</p>
+<p>Wrote a MATLAB program to size a semi-evacuated chamber that reaches neutral buoyancy in standard atmosphere. It aimed to balance buoyancy with respect to atmospheric elevation against the weight of the vessel. It also checked material hoop stress and elasticity of various materials.</p><span class="tag">MATLAB</span></article>
+<article class="proj"><h3>CATIA Helicopter Modeling</h3><p class="meta">Fall 2024 - Team lead of 4</p>
+<p>Collaboratively, reverse-engineered and modeled an RC toy helicopter. I modeled the drivetrain, the gear reduction and calculated the torque/speed trade-off. I then then refined teammates' subsystem models and integrated everything into one coherent assembly.</p><span class="tag">CATIA</span></article>
+<article class="proj"><h3>Solid Mechanics Stress on a wing, MATLAB Program</h3><p class="meta">Fall 2023 - 2024</p>
+<p>Given certain parameters and conditions pertaining to the honeycomb structure of the helicopter blade airfoil, I had designed and plotted a program that measured the shear stress and bending moment. This was done using a given data set and using matricies, was caluculated in MATLAB.</p>
+<span class="tag">MATLAB</span></article>
+</div>
+<br>
+<div class="grid">
+<article class="'proj"><img src="Engineering_Portfolio_Photos/ERG101_Rudimentary_Rocket Design.jpg" width="450" height="300" style="object-fit: contain;"></article>
+<article class="'proj"><img src="Engineering_Portfolio_Photos/Physics_2_Thermal-Fluids_Report.png" width="470" height="300" style="object-fit: cover;"></article>
+<article class="'proj"><img src="Engineering_Portfolio_Photos/Wing_Aerodynamics.png" width="470" height="300" style="object-fit: cover;"></article>
+
+</div>
+<div class="grid">
+<article class="proj"><h3>Rudamentry Rocket Design</h3><p class="meta">Fall 2024 - Team Lead of 3</p>
+<p>In my introductory honors engineering class, I led a group of 3 in fulling designing a crude rocket tasked with launching a payload into LEO. We calculated sctructues, orbit trajectory, fuel, and weight requirements reitterating when one subsystem didn't meet the specs. Together we modeled the rocket in CATIA and wrote a report. </p>
+<span class="tag">CATIA</span></article>
+<article class="proj"><h3>Physics Thermal Flows Report</h3><p class="meta">Summer 2025</p>
+<p>In a group of 4, my team and I calculated and wrote a report on how opening a door from an initially warm adiabatic room to a colder outside would change the temperature over time, given a set sized door and two distict constant ideal gases.</p><span class="tag">Report Writing</span></article>
+<article class="proj"><h3>Wing Aerodynamics Model</h3><p class="meta">Fall 2026</p>
+<p>Using a prebuilt model, confirmed and tested equations for forces and flows on differently shaped wings. Given a constant NACA airfoil, the angle of attack, span, sweep, dihedral, twist, and taper ratio were all varied with respect to a control and trends were established to recreate a wing to perform the most efficiently, as seen above.</p><span class="tag">MATLAB</span></article>
+</div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+<h2>Skills:</h2>
+<dl>
+<dt><b>CAD and engineering software:</b></dt><dd><b>Autodesk Inventor-</b> 7 years (Proficient); &emsp;&emsp; <b>Fusion 360-</b> 5 years (Intermediate); &emsp;&emsp; <b>Autodesk Vault-</b> 1.5 years (Intermediate); &emsp;&emsp; <b>CATIA-</b> 3 years (Intermediate); <b>SolidWorks-</b> 6 months (Beginner); &emsp;&emsp;&emsp;&ensp; &ensp; <b>Stk 13-</b> 3 months (Beginner); &emsp;&emsp;&emsp;&emsp;&ensp; <b>Sketchup-</b> 1 year (Beginner), &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp; <b>Altium-</b> &#60 1 month (Beginner) </dd>
+<dt><b>Manufacturing and shop:</b></dt><dd><b>CNC milling-</b> 1.5 years (Intermediate); &emsp;&emsp;&ensp; <b>Lathes-</b> 1.5 years (Intermediate); &emsp; &emsp;&emsp; <b>Drill Press-</b> +10 years (Proficient); &emsp;&ensp; &emsp; <b>Power Tools-</b> +10 years (Proficient); <b>Forklift Operation-</b> 1 year (Intermediate); &ensp; &ensp; <b>3D Printing-</b> 7 years (Proficient); &emsp;&emsp;&emsp; <b>Soldering-</b> 6 years (Intermediate); &emsp;&emsp;&emsp; <b>Robotics-</b> 6 years (Proficient).</dd>
+<dt><b>Programming:</b></dt><dd><b>HTML-</b> 1.5 years (Intermediate); &emsp;&emsp;&emsp;&ensp; &emsp; <b>CSS-</b> 1 year (Beginner), &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <b>Python-</b> 6 months (Beginner), &emsp;&emsp; &emsp; &emsp; <b>MATLAB-</b> 2 years (Intermediate)</dd>
+<dt><b>Other:</b></dt><dd><b>Technical Research and Report Writing-</b> +8 years (Proficient); &emsp;&emsp; <b>MS Office Suite-</b> +10 years (Proficient)</dd>
+<dt><b>Certifications:</b></dt><dd>GMetrix Autodesk Inventor, Spring 2021</dd>
+</dl>
+</div></section>
+
+<section id="involvement"><div class="wrap">
+<h2>Involvement and Education:</h2>
+<dl>
+<dt>Charlotte High School</dt><dd>High School Deploma; Weighted GPA: 4.4 & Unweighted GPA: 3.8 (Fall 2020 - Spring 2024)</dd>
+<dt>Embry-Riddle Aeronautical University</dt><dd>B.S. Aerospace Engineering, Honors Program, and a concentration in Astronautics & Propulsion. <br>Minors in Space Operations and Physics.&emsp;&emsp; CGPA: 3.5&emsp;&emsp; Expected Graduation: May 2028.</dd>
+<dt>ERPL</dt><dd>Experimental Rocket Propulsion Lab, Electrical Team (Fall 2025 - present)</dd>
+<dt>RDL</dt><dd>Rotating Detonation Lab, Structures & Electrical (Fall 2026 - present)</dd>
+<dt>AMRA</dt><dd>Autonomous Maritime Robotics Association, Electrical & Software (Fall 2026 - present)</dd>
+<dt>Honors program</dt><dd>Derbyshire Garden (Fall 2024 - present)&emsp;&emsp;&&emsp;&emsp; Pure Water Project (Fall 2024 - Spring 2025)</dd>
+<dt>Awards</dt><dd>Dean's List 2024, 2025, 2026 &emsp;&emsp; ERAU Presidential and First Robotics Scholarship <br>Charlotte High Varsity Swim, Most Improved (2024)</dd>
+</dl>
+</div></section>
+</main>
+</section>
+<footer id="contact"><div class="wrap">
+<h2>Let's talk<h3>+1 (941) 661-7454</h3></h2> 
+<p>I'm looking for engineering internships and co-ops where I can build things and keep learning.</p>
+<div class="btns">
+  <a class="btn p" href="mailto:Vanagasc@my.erau.edu" onclick="copyText(this)">Vanagasc@my.erau.edu</a>
+  <a class="btn p" href="mailto:Cavanagas@gmail.com" onclick="copyText(this)">Cavanagas@gmail.com</a>
+  <a class="btn p" href="https://www.linkedin.com/in/cole-vanagas" rel="noopener">linkedin.com/in/cole-vanagas</a></div>
+</div>
+<script>
+function copyText(el) {
+  const text = el.textContent.trim();
+
+  // Modern API (needs HTTPS or localhost)
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(text).catch(() => fallbackCopy(text));
+  } else {
+    fallbackCopy(text);
+  }
+}
+
+function fallbackCopy(text) {
+  const ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.opacity = '0';
+  document.body.appendChild(ta);
+  ta.select();
+  try { document.execCommand('copy'); } catch (e) {}
+  document.body.removeChild(ta);
+}
+</script>
+</footer>
+</body>
+</html>
